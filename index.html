@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artworks BY Joi_mo</title>
+    <link rel="icon" href="./image/ico.jpg" type="image/x-icon" />
+
+    <!-- 引用外部CSS文件 -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- 在此加载每个图片列表文件 -->
+    <script src="全案IP设计.js"></script>
+    <script src="创意分镜案.js"></script>
+    <script src="动画随笔.js"></script>
+    <script src="3D角色设计.js"></script>
+    <script src="动画全期.js"></script>
+    <script src="IP设计.js"></script>
+    <script src="美术.js"></script>
+    <script src="SD_AI.js"></script>
+    <!-- 引入 imageLoader.js -->
+    <script src="imageLoader.js"></script>
+  </head>
+
+  <body
+    style="
+      background-image: url('./bg.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <div class="sticky-top-title">jOi_mO's Artworks</div>
+    <!-- 全案IP设计 -->
+    <div>
+      <div id="quanaipsj-anchor"></div>
+      <div class="sticky-top">
+        <h1 class="h1">1. 全案IP设计</h1>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="container" id="quanaipsjcontainer">
+        <!-- 图片将通过JavaScript动态添加到这里 -->
+      </div>
+      <script>
+        loadImages("quanaipsjcontainer", 全案IP设计ImageList);
+      </script>
+    </div>
+
+    <!-- 创意分镜案 -->
+    <div>
+      <div id="chuangyfja-anchor"></div>
+      <div class="sticky-top">
+        <h1 class="h1">2. 创意分镜案</h1>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="container" id="chuangyfjaContainer">
+        <!-- 图片将通过JavaScript动态添加到这里 -->
+      </div>
+      <script>
+        loadImages("chuangyfjaContainer", 创意分镜案ImageList);
+      </script>
+    </div>
+
+    <!-- 动画随笔 -->
+    <div>
+      <div id="donghsb-anchor"></div>
+      <div class="sticky-top">
+        <h1 class="h1">3. 动画随笔</h1>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="container" id="donghsbContainer">
+        <!-- 图片将通过JavaScript动态添加到这里 -->
+      </div>
+      <script>
+        loadImages("donghsbContainer", 动画随笔ImageList);
+      </script>
+    </div>
+
+    <!-- 3D角色设计 -->
+    <div>
+      <div id="3djssj-anchor"></div>
+      <div class="sticky-top">
+        <h1 class="h1">3. 3D角色设计</h1>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="container" id="3djssjcontainer">
+        <!-- 图片将通过JavaScript动态添加到这里 -->
+      </div>
+      <script>
+        loadImages("3djssjcontainer", 三D角色设计ImageList);
+      </script>
+    </div>
+
+    <!-- 动画全期 -->
+    <div>
+      <div id="donghqq-anchor"></div>
+      <div class="sticky-top">
+        <h1 class="h1">5. 动画全期</h1>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="container" id="donghqqcontainer">
+        <!-- 图片将通过JavaScript动态添加到这里 -->
+      </div>
+      <script>
+        loadImages("donghqqcontainer", 动画全期ImageList);
+      </script>
+    </div>
+
+    <!-- IP设计 -->
+    <div>
+      <div id="ipsj-anchor"></div>
+      <div class="sticky-top">
+        <h1 class="h1">6. IP设计</h1>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="container" id="ipsjcontainer">
+        <!-- 图片将通过JavaScript动态添加到这里 -->
+      </div>
+      <script>
+        loadImages("ipsjcontainer", IP设计ImageList);
+      </script>
+    </div>
+
+    <!-- IP设计 -->
+    <div>
+      <div id="qitmsgz-anchor"></div>
+      <div class="sticky-top">
+        <h1 class="h1">7. 其他artworks</h1>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="container" id="qitmssjcontainer">
+        <!-- 图片将通过JavaScript动态添加到这里 -->
+      </div>
+      <script>
+        loadImages("qitmssjcontainer", 美术ImageList);
+      </script>
+    </div>
+
+    <!-- SD_AI -->
+    <div>
+      <div id="SD_AI-anchor"></div>
+      <div class="sticky-top">
+        <h1 class="h1">8. SD_AI</h1>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="container" id="sdaicontainer">
+        <!-- 图片将通过JavaScript动态添加到这里 -->
+      </div>
+      <script>
+        loadImages("sdaicontainer", SD_AIImageList);
+      </script>
+    </div>
+
+    ------
+
+    <div class="sidebar" style="display: flex; align-items: center">
+      <!-- 侧边栏用padding-right控制侧边栏的居中 -->
+      <div
+        style="
+          display: flex;
+          align-items: top;
+          flex-direction: column;
+          padding-right: 20px;
+        "
+      >
+        <a href="#quanaipsj-anchor" class="sidebar-button"> · 全案IP设计</a>
+        <a href="#chuangyfja-anchor" class="sidebar-button"> · 创意分镜案</a>
+        <a href="#donghsb-anchor" class="sidebar-button"> · 动画随笔</a>
+        <a href="#3djssj-anchor" class="sidebar-button"> · 3D角色设计</a>
+        <a href="#donghqq-anchor" class="sidebar-button"> · 动画全期</a>
+        <a href="#ipsj-anchor" class="sidebar-button">· IP设计</a>
+        <a href="#qitmsgz-anchor" class="sidebar-button"> · 其他artworks</a>
+        <a href="#SD_AI-anchor" class="sidebar-button"> · SD_AI</a>
+
+        <!-- 侧边栏底部留空 -->
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+
+      <div style="display: flex; flex-direction: column">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    <script src="fullscreen.js"></script>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.sticky-top h1');vs‸
+            sections.forEach((section, index) => {
+                section.textContent = `${index + 1}. ${section.textContent.split('. ')[1]}`;
+            });
+        });
+    </script> -->
+    <!-- 为h1标签自动添加图层顺序 -->
+  </body>
+</html>
