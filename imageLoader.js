@@ -14,20 +14,36 @@ function loadImages(containerId, imageList) {
     document.addEventListener("DOMContentLoaded", function() {
         // 获取图片容器元素
         const container = document.getElementById(containerId);
+        const images = [];
+
         // 遍历图片URL数组
         imageList.forEach(imageSrc => {
             // 创建用于包裹图片的div元素
             const box = document.createElement('div');
             box.className = 'box';
-            // 创建图片元素并设置其src属性和alt属性
+            // 创建图片元素并设置其data-src属性和alt属性
             const img = document.createElement('img');
-            img.src = imageSrc;
-            // 提取文件名作为alt属性值
+            img.dataset.src = imageSrc; // 使用data-src存储真实URL
             img.alt = imageSrc.split('/').pop();
             // 将图片元素添加到div.box中
             box.appendChild(img);
             // 将div.box添加到图片容器中
             container.appendChild(box);
+            images.push(img);
         });
+
+        // 创建Intersection Observer实例
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src; // 设置src属性
+                    observer.unobserve(img); // 停止观察该元素
+                }
+            });
+        });
+
+        // 开始观察每个图片元素
+        images.forEach(img => observer.observe(img));
     });
 }
